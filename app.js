@@ -79,38 +79,6 @@ function shuffleWithSeed(arr, seedText) {
   return out;
 }
 
-
-function normalizeAudioSrc(rawPath) {
-  if (!rawPath) return "";
-  const value = String(rawPath).trim();
-
-  if (/^https?:\/\//i.test(value) || value.startsWith("./") || value.startsWith("../") || value.startsWith("/data/")) {
-    return value;
-  }
-
-  // Convert accidental local filesystem paths (e.g., /home/user/.../data/...) into web paths.
-  const unixDataIdx = value.indexOf("/data/");
-  if (unixDataIdx >= 0) {
-    return `.${value.slice(unixDataIdx)}`;
-  }
-
-  const windowsNormalized = value.replace(/\\/g, "/");
-  const winDataIdx = windowsNormalized.toLowerCase().indexOf("/data/");
-  if (winDataIdx >= 0) {
-    return `.${windowsNormalized.slice(winDataIdx)}`;
-  }
-
-  return value;
-}
-
-function wireAudioFallback(audioEl, rawPath) {
-  audioEl.addEventListener("error", () => {
-    const msg = `Audio failed to load: ${rawPath}`;
-    console.warn(msg);
-    audioEl.title = msg;
-  });
-}
-
 function storageKey(id) {
   return `${STORAGE_PREFIX}_${id}`;
 }
@@ -235,8 +203,7 @@ function renderTask() {
     refBlock.innerHTML = "<h3>Reference clip</h3><p class=\"small muted\">Ground truth speech (not scored)</p>";
     const refAudio = document.createElement("audio");
     refAudio.controls = true;
-    refAudio.src = normalizeAudioSrc(referenceSrc);
-    wireAudioFallback(refAudio, referenceSrc);
+    refAudio.src = referenceSrc;
     refBlock.appendChild(refAudio);
     ratingsForm.appendChild(refBlock);
   }
@@ -249,9 +216,7 @@ function renderTask() {
 
     const audio = document.createElement("audio");
     audio.controls = true;
-    const rawModelPath = task.audios?.[modelId] || "";
-    audio.src = normalizeAudioSrc(rawModelPath);
-    wireAudioFallback(audio, rawModelPath);
+    audio.src = task.audios?.[modelId] || "";
     modelBlock.appendChild(audio);
 
     const grid = document.createElement("div");

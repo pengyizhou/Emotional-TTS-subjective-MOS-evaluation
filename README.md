@@ -4,11 +4,10 @@ This project now supports **Azure VM deployment with Nginx + backend API**, so e
 
 ## What this system does
 - Collect evaluator email on welcome page.
-- Emotion labels are not shown to evaluators during scoring (blind setup).
 - Enforce fixed emotion sequence:
   `happy -> sad -> surprised -> disgusted -> neutral -> fearful -> angry`.
 - 5 tasks per emotion (35 tasks total).
-- Each task contains 1 reference clip (`model0`, ground-truth, not scored) followed by 6 model clips shown in deterministic shuffled order.
+- Each task contains 6 model clips shown in deterministic shuffled order.
 - For each clip, collect 4 metrics (0–5):
   - Intelligibility（可懂度）
   - Naturalness（自然度）
@@ -26,14 +25,10 @@ data/
   manifest.json
   happy/model1/sample1.wav ... sample5.wav
   ...
-  angry/model0/sample1.wav ... sample5.wav
   angry/model6/sample1.wav ... sample5.wav
 ```
 
 `data/manifest.json` includes transcript text and audio paths.
-
-> Use web paths (e.g., `./data/happy/model1/sample1.wav`), **not local filesystem paths** like `/home/...`.
-> The frontend tries to auto-convert accidental absolute paths containing `/data/`, but relative web paths are strongly recommended.
 
 ### Important manifest fields
 
