@@ -1,0 +1,475 @@
+{
+  "emotions": {
+    "happy": [
+      {
+        "sampleId": "sample1",
+        "text": "Replace with transcript for happy sample 1.",
+        "audios": {
+          "model0": "./data/happy/model0/sample1.wav",
+          "model1": "./data/happy/model1/sample1.wav",
+          "model2": "./data/happy/model2/sample1.wav",
+          "model3": "./data/happy/model3/sample1.wav",
+          "model4": "./data/happy/model4/sample1.wav",
+          "model5": "./data/happy/model5/sample1.wav",
+          "model6": "./data/happy/model6/sample1.wav"
+        }
+      },
+      {
+        "sampleId": "sample2",
+        "text": "Replace with transcript for happy sample 2.",
+        "audios": {
+          "model0": "./data/happy/model0/sample2.wav",
+          "model1": "./data/happy/model1/sample2.wav",
+          "model2": "./data/happy/model2/sample2.wav",
+          "model3": "./data/happy/model3/sample2.wav",
+          "model4": "./data/happy/model4/sample2.wav",
+          "model5": "./data/happy/model5/sample2.wav",
+          "model6": "./data/happy/model6/sample2.wav"
+        }
+      },
+      {
+        "sampleId": "sample3",
+        "text": "Replace with transcript for happy sample 3.",
+        "audios": {
+          "model0": "./data/happy/model0/sample3.wav",
+          "model1": "./data/happy/model1/sample3.wav",
+          "model2": "./data/happy/model2/sample3.wav",
+          "model3": "./data/happy/model3/sample3.wav",
+          "model4": "./data/happy/model4/sample3.wav",
+          "model5": "./data/happy/model5/sample3.wav",
+          "model6": "./data/happy/model6/sample3.wav"
+        }
+      },
+      {
+        "sampleId": "sample4",
+        "text": "Replace with transcript for happy sample 4.",
+        "audios": {
+          "model0": "./data/happy/model0/sample4.wav",
+          "model1": "./data/happy/model1/sample4.wav",
+          "model2": "./data/happy/model2/sample4.wav",
+          "model3": "./data/happy/model3/sample4.wav",
+          "model4": "./data/happy/model4/sample4.wav",
+          "model5": "./data/happy/model5/sample4.wav",
+          "model6": "./data/happy/model6/sample4.wav"
+        }
+      },
+      {
+        "sampleId": "sample5",
+        "text": "Replace with transcript for happy sample 5.",
+        "audios": {
+          "model0": "./data/happy/model0/sample5.wav",
+          "model1": "./data/happy/model1/sample5.wav",
+          "model2": "./data/happy/model2/sample5.wav",
+          "model3": "./data/happy/model3/sample5.wav",
+          "model4": "./data/happy/model4/sample5.wav",
+          "model5": "./data/happy/model5/sample5.wav",
+          "model6": "./data/happy/model6/sample5.wav"
+        }
+      }
+    ],
+    "sad": [
+      {
+        "sampleId": "sample1",
+        "text": "Replace with transcript for sad sample 1.",
+        "audios": {
+          "model0": "./data/sad/model0/sample1.wav",
+          "model1": "./data/sad/model1/sample1.wav",
+          "model2": "./data/sad/model2/sample1.wav",
+          "model3": "./data/sad/model3/sample1.wav",
+          "model4": "./data/sad/model4/sample1.wav",
+          "model5": "./data/sad/model5/sample1.wav",
+          "model6": "./data/sad/model6/sample1.wav"
+        }
+      },
+      {
+        "sampleId": "sample2",
+        "text": "Replace with transcript for sad sample 2.",
+        "audios": {
+          "model0": "./data/sad/model0/sample2.wav",
+          "model1": "./data/sad/model1/sample2.wav",
+          "model2": "./data/sad/model2/sample2.wav",
+          "model3": "./data/sad/model3/sample2.wav",
+          "model4": "./data/sad/model4/sample2.wav",
+          "model5": "./data/sad/model5/sample2.wav",
+          "model6": "./data/sad/model6/sample2.wav"
+        }
+      },
+      {
+        "sampleId": "sample3",
+        "text": "Replace with transcript for sad sample 3.",
+        "audios": {
+          "model0": "./data/sad/model0/sample3.wav",
+          "model1": "./data/sad/model1/sample3.wav",
+          "model2": "./data/sad/model2/sample3.wav",
+          "model3": "./data/sad/model3/sample3.wav",
+          "model4": "./data/sad/model4/sample3.wav",
+          "model5": "./data/sad/model5/sample3.wav",
+          "model6": "./data/sad/model6/sample3.wav"
+        }
+      },
+      {
+        "sampleId": "sample4",
+        "text": "Replace with transcript for sad sample 4.",
+        "audios": {
+          "model0": "./data/sad/model0/sample4.wav",
+          "model1": "./data/sad/model1/sample4.wav",
+          "model2": "./data/sad/model2/sample4.wav",
+          "model3": "./data/sad/model3/sample4.wav",
+          "model4": "./data/sad/model4/sample4.wav",
+          "model5": "./data/sad/model5/sample4.wav",
+          "model6": "./data/sad/model6/sample4.wav"
+        }
+      },
+      {
+        "sampleId": "sample5",
+        "text": "Replace with transcript for sad sample 5.",
+        "audios": {
+          "model0": "./data/sad/model0/sample5.wav",
+          "model1": "./data/sad/model1/sample5.wav",
+          "model2": "./data/sad/model2/sample5.wav",
+          "model3": "./data/sad/model3/sample5.wav",
+          "model4": "./data/sad/model4/sample5.wav",
+          "model5": "./data/sad/model5/sample5.wav",
+          "model6": "./data/sad/model6/sample5.wav"
+        }
+      }
+    ],
+    "surprised": [
+      {
+        "sampleId": "sample1",
+        "text": "Replace with transcript for surprised sample 1.",
+        "audios": {
+          "model0": "./data/surprised/model0/sample1.wav",
+          "model1": "./data/surprised/model1/sample1.wav",
+          "model2": "./data/surprised/model2/sample1.wav",
+          "model3": "./data/surprised/model3/sample1.wav",
+          "model4": "./data/surprised/model4/sample1.wav",
+          "model5": "./data/surprised/model5/sample1.wav",
+          "model6": "./data/surprised/model6/sample1.wav"
+        }
+      },
+      {
+        "sampleId": "sample2",
+        "text": "Replace with transcript for surprised sample 2.",
+        "audios": {
+          "model0": "./data/surprised/model0/sample2.wav",
+          "model1": "./data/surprised/model1/sample2.wav",
+          "model2": "./data/surprised/model2/sample2.wav",
+          "model3": "./data/surprised/model3/sample2.wav",
+          "model4": "./data/surprised/model4/sample2.wav",
+          "model5": "./data/surprised/model5/sample2.wav",
+          "model6": "./data/surprised/model6/sample2.wav"
+        }
+      },
+      {
+        "sampleId": "sample3",
+        "text": "Replace with transcript for surprised sample 3.",
+        "audios": {
+          "model0": "./data/surprised/model0/sample3.wav",
+          "model1": "./data/surprised/model1/sample3.wav",
+          "model2": "./data/surprised/model2/sample3.wav",
+          "model3": "./data/surprised/model3/sample3.wav",
+          "model4": "./data/surprised/model4/sample3.wav",
+          "model5": "./data/surprised/model5/sample3.wav",
+          "model6": "./data/surprised/model6/sample3.wav"
+        }
+      },
+      {
+        "sampleId": "sample4",
+        "text": "Replace with transcript for surprised sample 4.",
+        "audios": {
+          "model0": "./data/surprised/model0/sample4.wav",
+          "model1": "./data/surprised/model1/sample4.wav",
+          "model2": "./data/surprised/model2/sample4.wav",
+          "model3": "./data/surprised/model3/sample4.wav",
+          "model4": "./data/surprised/model4/sample4.wav",
+          "model5": "./data/surprised/model5/sample4.wav",
+          "model6": "./data/surprised/model6/sample4.wav"
+        }
+      },
+      {
+        "sampleId": "sample5",
+        "text": "Replace with transcript for surprised sample 5.",
+        "audios": {
+          "model0": "./data/surprised/model0/sample5.wav",
+          "model1": "./data/surprised/model1/sample5.wav",
+          "model2": "./data/surprised/model2/sample5.wav",
+          "model3": "./data/surprised/model3/sample5.wav",
+          "model4": "./data/surprised/model4/sample5.wav",
+          "model5": "./data/surprised/model5/sample5.wav",
+          "model6": "./data/surprised/model6/sample5.wav"
+        }
+      }
+    ],
+    "disgusted": [
+      {
+        "sampleId": "sample1",
+        "text": "Replace with transcript for disgusted sample 1.",
+        "audios": {
+          "model0": "./data/disgusted/model0/sample1.wav",
+          "model1": "./data/disgusted/model1/sample1.wav",
+          "model2": "./data/disgusted/model2/sample1.wav",
+          "model3": "./data/disgusted/model3/sample1.wav",
+          "model4": "./data/disgusted/model4/sample1.wav",
+          "model5": "./data/disgusted/model5/sample1.wav",
+          "model6": "./data/disgusted/model6/sample1.wav"
+        }
+      },
+      {
+        "sampleId": "sample2",
+        "text": "Replace with transcript for disgusted sample 2.",
+        "audios": {
+          "model0": "./data/disgusted/model0/sample2.wav",
+          "model1": "./data/disgusted/model1/sample2.wav",
+          "model2": "./data/disgusted/model2/sample2.wav",
+          "model3": "./data/disgusted/model3/sample2.wav",
+          "model4": "./data/disgusted/model4/sample2.wav",
+          "model5": "./data/disgusted/model5/sample2.wav",
+          "model6": "./data/disgusted/model6/sample2.wav"
+        }
+      },
+      {
+        "sampleId": "sample3",
+        "text": "Replace with transcript for disgusted sample 3.",
+        "audios": {
+          "model0": "./data/disgusted/model0/sample3.wav",
+          "model1": "./data/disgusted/model1/sample3.wav",
+          "model2": "./data/disgusted/model2/sample3.wav",
+          "model3": "./data/disgusted/model3/sample3.wav",
+          "model4": "./data/disgusted/model4/sample3.wav",
+          "model5": "./data/disgusted/model5/sample3.wav",
+          "model6": "./data/disgusted/model6/sample3.wav"
+        }
+      },
+      {
+        "sampleId": "sample4",
+        "text": "Replace with transcript for disgusted sample 4.",
+        "audios": {
+          "model0": "./data/disgusted/model0/sample4.wav",
+          "model1": "./data/disgusted/model1/sample4.wav",
+          "model2": "./data/disgusted/model2/sample4.wav",
+          "model3": "./data/disgusted/model3/sample4.wav",
+          "model4": "./data/disgusted/model4/sample4.wav",
+          "model5": "./data/disgusted/model5/sample4.wav",
+          "model6": "./data/disgusted/model6/sample4.wav"
+        }
+      },
+      {
+        "sampleId": "sample5",
+        "text": "Replace with transcript for disgusted sample 5.",
+        "audios": {
+          "model0": "./data/disgusted/model0/sample5.wav",
+          "model1": "./data/disgusted/model1/sample5.wav",
+          "model2": "./data/disgusted/model2/sample5.wav",
+          "model3": "./data/disgusted/model3/sample5.wav",
+          "model4": "./data/disgusted/model4/sample5.wav",
+          "model5": "./data/disgusted/model5/sample5.wav",
+          "model6": "./data/disgusted/model6/sample5.wav"
+        }
+      }
+    ],
+    "neutral": [
+      {
+        "sampleId": "sample1",
+        "text": "Replace with transcript for neutral sample 1.",
+        "audios": {
+          "model0": "./data/neutral/model0/sample1.wav",
+          "model1": "./data/neutral/model1/sample1.wav",
+          "model2": "./data/neutral/model2/sample1.wav",
+          "model3": "./data/neutral/model3/sample1.wav",
+          "model4": "./data/neutral/model4/sample1.wav",
+          "model5": "./data/neutral/model5/sample1.wav",
+          "model6": "./data/neutral/model6/sample1.wav"
+        }
+      },
+      {
+        "sampleId": "sample2",
+        "text": "Replace with transcript for neutral sample 2.",
+        "audios": {
+          "model0": "./data/neutral/model0/sample2.wav",
+          "model1": "./data/neutral/model1/sample2.wav",
+          "model2": "./data/neutral/model2/sample2.wav",
+          "model3": "./data/neutral/model3/sample2.wav",
+          "model4": "./data/neutral/model4/sample2.wav",
+          "model5": "./data/neutral/model5/sample2.wav",
+          "model6": "./data/neutral/model6/sample2.wav"
+        }
+      },
+      {
+        "sampleId": "sample3",
+        "text": "Replace with transcript for neutral sample 3.",
+        "audios": {
+          "model0": "./data/neutral/model0/sample3.wav",
+          "model1": "./data/neutral/model1/sample3.wav",
+          "model2": "./data/neutral/model2/sample3.wav",
+          "model3": "./data/neutral/model3/sample3.wav",
+          "model4": "./data/neutral/model4/sample3.wav",
+          "model5": "./data/neutral/model5/sample3.wav",
+          "model6": "./data/neutral/model6/sample3.wav"
+        }
+      },
+      {
+        "sampleId": "sample4",
+        "text": "Replace with transcript for neutral sample 4.",
+        "audios": {
+          "model0": "./data/neutral/model0/sample4.wav",
+          "model1": "./data/neutral/model1/sample4.wav",
+          "model2": "./data/neutral/model2/sample4.wav",
+          "model3": "./data/neutral/model3/sample4.wav",
+          "model4": "./data/neutral/model4/sample4.wav",
+          "model5": "./data/neutral/model5/sample4.wav",
+          "model6": "./data/neutral/model6/sample4.wav"
+        }
+      },
+      {
+        "sampleId": "sample5",
+        "text": "Replace with transcript for neutral sample 5.",
+        "audios": {
+          "model0": "./data/neutral/model0/sample5.wav",
+          "model1": "./data/neutral/model1/sample5.wav",
+          "model2": "./data/neutral/model2/sample5.wav",
+          "model3": "./data/neutral/model3/sample5.wav",
+          "model4": "./data/neutral/model4/sample5.wav",
+          "model5": "./data/neutral/model5/sample5.wav",
+          "model6": "./data/neutral/model6/sample5.wav"
+        }
+      }
+    ],
+    "fearful": [
+      {
+        "sampleId": "sample1",
+        "text": "Replace with transcript for fearful sample 1.",
+        "audios": {
+          "model0": "./data/fearful/model0/sample1.wav",
+          "model1": "./data/fearful/model1/sample1.wav",
+          "model2": "./data/fearful/model2/sample1.wav",
+          "model3": "./data/fearful/model3/sample1.wav",
+          "model4": "./data/fearful/model4/sample1.wav",
+          "model5": "./data/fearful/model5/sample1.wav",
+          "model6": "./data/fearful/model6/sample1.wav"
+        }
+      },
+      {
+        "sampleId": "sample2",
+        "text": "Replace with transcript for fearful sample 2.",
+        "audios": {
+          "model0": "./data/fearful/model0/sample2.wav",
+          "model1": "./data/fearful/model1/sample2.wav",
+          "model2": "./data/fearful/model2/sample2.wav",
+          "model3": "./data/fearful/model3/sample2.wav",
+          "model4": "./data/fearful/model4/sample2.wav",
+          "model5": "./data/fearful/model5/sample2.wav",
+          "model6": "./data/fearful/model6/sample2.wav"
+        }
+      },
+      {
+        "sampleId": "sample3",
+        "text": "Replace with transcript for fearful sample 3.",
+        "audios": {
+          "model0": "./data/fearful/model0/sample3.wav",
+          "model1": "./data/fearful/model1/sample3.wav",
+          "model2": "./data/fearful/model2/sample3.wav",
+          "model3": "./data/fearful/model3/sample3.wav",
+          "model4": "./data/fearful/model4/sample3.wav",
+          "model5": "./data/fearful/model5/sample3.wav",
+          "model6": "./data/fearful/model6/sample3.wav"
+        }
+      },
+      {
+        "sampleId": "sample4",
+        "text": "Replace with transcript for fearful sample 4.",
+        "audios": {
+          "model0": "./data/fearful/model0/sample4.wav",
+          "model1": "./data/fearful/model1/sample4.wav",
+          "model2": "./data/fearful/model2/sample4.wav",
+          "model3": "./data/fearful/model3/sample4.wav",
+          "model4": "./data/fearful/model4/sample4.wav",
+          "model5": "./data/fearful/model5/sample4.wav",
+          "model6": "./data/fearful/model6/sample4.wav"
+        }
+      },
+      {
+        "sampleId": "sample5",
+        "text": "Replace with transcript for fearful sample 5.",
+        "audios": {
+          "model0": "./data/fearful/model0/sample5.wav",
+          "model1": "./data/fearful/model1/sample5.wav",
+          "model2": "./data/fearful/model2/sample5.wav",
+          "model3": "./data/fearful/model3/sample5.wav",
+          "model4": "./data/fearful/model4/sample5.wav",
+          "model5": "./data/fearful/model5/sample5.wav",
+          "model6": "./data/fearful/model6/sample5.wav"
+        }
+      }
+    ],
+    "angry": [
+      {
+        "sampleId": "sample1",
+        "text": "Replace with transcript for angry sample 1.",
+        "audios": {
+          "model0": "./data/angry/model0/sample1.wav",
+          "model1": "./data/angry/model1/sample1.wav",
+          "model2": "./data/angry/model2/sample1.wav",
+          "model3": "./data/angry/model3/sample1.wav",
+          "model4": "./data/angry/model4/sample1.wav",
+          "model5": "./data/angry/model5/sample1.wav",
+          "model6": "./data/angry/model6/sample1.wav"
+        }
+      },
+      {
+        "sampleId": "sample2",
+        "text": "Replace with transcript for angry sample 2.",
+        "audios": {
+          "model0": "./data/angry/model0/sample2.wav",
+          "model1": "./data/angry/model1/sample2.wav",
+          "model2": "./data/angry/model2/sample2.wav",
+          "model3": "./data/angry/model3/sample2.wav",
+          "model4": "./data/angry/model4/sample2.wav",
+          "model5": "./data/angry/model5/sample2.wav",
+          "model6": "./data/angry/model6/sample2.wav"
+        }
+      },
+      {
+        "sampleId": "sample3",
+        "text": "Replace with transcript for angry sample 3.",
+        "audios": {
+          "model0": "./data/angry/model0/sample3.wav",
+          "model1": "./data/angry/model1/sample3.wav",
+          "model2": "./data/angry/model2/sample3.wav",
+          "model3": "./data/angry/model3/sample3.wav",
+          "model4": "./data/angry/model4/sample3.wav",
+          "model5": "./data/angry/model5/sample3.wav",
+          "model6": "./data/angry/model6/sample3.wav"
+        }
+      },
+      {
+        "sampleId": "sample4",
+        "text": "Replace with transcript for angry sample 4.",
+        "audios": {
+          "model0": "./data/angry/model0/sample4.wav",
+          "model1": "./data/angry/model1/sample4.wav",
+          "model2": "./data/angry/model2/sample4.wav",
+          "model3": "./data/angry/model3/sample4.wav",
+          "model4": "./data/angry/model4/sample4.wav",
+          "model5": "./data/angry/model5/sample4.wav",
+          "model6": "./data/angry/model6/sample4.wav"
+        }
+      },
+      {
+        "sampleId": "sample5",
+        "text": "Replace with transcript for angry sample 5.",
+        "audios": {
+          "model0": "./data/angry/model0/sample5.wav",
+          "model1": "./data/angry/model1/sample5.wav",
+          "model2": "./data/angry/model2/sample5.wav",
+          "model3": "./data/angry/model3/sample5.wav",
+          "model4": "./data/angry/model4/sample5.wav",
+          "model5": "./data/angry/model5/sample5.wav",
+          "model6": "./data/angry/model6/sample5.wav"
+        }
+      }
+    ]
+  },
+  "repository": "OWNER/REPO",
+  "apiBase": "/api"
+}
