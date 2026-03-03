@@ -41,12 +41,24 @@
         <p id="prompt-text" class="prompt"></p>
 
         <details class="metric-help">
-          <summary>Scoring guide (0-5)</summary>
+          <summary>Scoring guide / 评分说明 (0-5)</summary>
           <ul>
-            <li><strong>Intelligibility（可懂度）</strong>: Is the speech clear and easy to understand? (0 = cannot understand, 5 = very clear)</li>
-            <li><strong>Naturalness（自然度）</strong>: Does the speech sound natural and human-like? (0 = very unnatural, 5 = very natural)</li>
-            <li><strong>Emotional expressiveness（情感表达丰富度）</strong>: How accurately and richly is the target emotion expressed? (0 = wrong/no emotion, 5 = very accurate and expressive)</li>
-            <li><strong>Overall quality（音频质量）</strong>: Overall audio quality including noise, distortion, and smoothness. (0 = very poor, 5 = excellent)</li>
+            <li>
+              <strong>Naturalness（自然度）</strong>: Compare each generated clip with the <strong>reference speech</strong>. Score how natural and human-like it sounds.
+              <br />请将每个合成语音与<strong>参考语音</strong>对比，评估其是否自然、像真人发音。
+            </li>
+            <li>
+              <strong>Emotional expressiveness（情感表达丰富度）</strong>: Compare with the reference speech emotion and score whether the generated clip expresses the <strong>same emotion as reference</strong>.
+              <br />请参考语音中的情感，评估该合成语音是否表达了与<strong>参考语音相同的情感</strong>。
+            </li>
+            <li>
+              <strong>Intelligibility（可懂度）</strong>: Compare the six generated clips with each other (not against reference) and score clarity/understandability.
+              <br />请在六个模型生成语音之间进行比较（不与参考语音比较），评估清晰度和可理解性。
+            </li>
+            <li>
+              <strong>Overall quality（音频质量）</strong>: Compare the six generated clips with each other (not against reference) for overall audio quality (noise, distortion, smoothness).
+              <br />请在六个模型生成语音之间进行比较（不与参考语音比较），综合评估音质（噪声、失真、流畅度）。
+            </li>
           </ul>
         </details>
 

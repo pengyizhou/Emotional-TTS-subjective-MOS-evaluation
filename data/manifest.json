@@ -5,6 +5,7 @@
         "sampleId": "sample1",
         "text": "Replace with transcript for happy sample 1.",
         "audios": {
+          "model0": "./data/happy/model0/sample1.wav",
           "model1": "./data/happy/model1/sample1.wav",
           "model2": "./data/happy/model2/sample1.wav",
           "model3": "./data/happy/model3/sample1.wav",
@@ -17,6 +18,7 @@
         "sampleId": "sample2",
         "text": "Replace with transcript for happy sample 2.",
         "audios": {
+          "model0": "./data/happy/model0/sample2.wav",
           "model1": "./data/happy/model1/sample2.wav",
           "model2": "./data/happy/model2/sample2.wav",
           "model3": "./data/happy/model3/sample2.wav",
@@ -29,6 +31,7 @@
         "sampleId": "sample3",
         "text": "Replace with transcript for happy sample 3.",
         "audios": {
+          "model0": "./data/happy/model0/sample3.wav",
           "model1": "./data/happy/model1/sample3.wav",
           "model2": "./data/happy/model2/sample3.wav",
           "model3": "./data/happy/model3/sample3.wav",
@@ -41,6 +44,7 @@
         "sampleId": "sample4",
         "text": "Replace with transcript for happy sample 4.",
         "audios": {
+          "model0": "./data/happy/model0/sample4.wav",
           "model1": "./data/happy/model1/sample4.wav",
           "model2": "./data/happy/model2/sample4.wav",
           "model3": "./data/happy/model3/sample4.wav",
@@ -53,6 +57,7 @@
         "sampleId": "sample5",
         "text": "Replace with transcript for happy sample 5.",
         "audios": {
+          "model0": "./data/happy/model0/sample5.wav",
           "model1": "./data/happy/model1/sample5.wav",
           "model2": "./data/happy/model2/sample5.wav",
           "model3": "./data/happy/model3/sample5.wav",
@@ -67,6 +72,7 @@
         "sampleId": "sample1",
         "text": "Replace with transcript for sad sample 1.",
         "audios": {
+          "model0": "./data/sad/model0/sample1.wav",
           "model1": "./data/sad/model1/sample1.wav",
           "model2": "./data/sad/model2/sample1.wav",
           "model3": "./data/sad/model3/sample1.wav",
@@ -79,6 +85,7 @@
         "sampleId": "sample2",
         "text": "Replace with transcript for sad sample 2.",
         "audios": {
+          "model0": "./data/sad/model0/sample2.wav",
           "model1": "./data/sad/model1/sample2.wav",
           "model2": "./data/sad/model2/sample2.wav",
           "model3": "./data/sad/model3/sample2.wav",
@@ -91,6 +98,7 @@
         "sampleId": "sample3",
         "text": "Replace with transcript for sad sample 3.",
         "audios": {
+          "model0": "./data/sad/model0/sample3.wav",
           "model1": "./data/sad/model1/sample3.wav",
           "model2": "./data/sad/model2/sample3.wav",
           "model3": "./data/sad/model3/sample3.wav",
@@ -103,6 +111,7 @@
         "sampleId": "sample4",
         "text": "Replace with transcript for sad sample 4.",
         "audios": {
+          "model0": "./data/sad/model0/sample4.wav",
           "model1": "./data/sad/model1/sample4.wav",
           "model2": "./data/sad/model2/sample4.wav",
           "model3": "./data/sad/model3/sample4.wav",
@@ -115,6 +124,7 @@
         "sampleId": "sample5",
         "text": "Replace with transcript for sad sample 5.",
         "audios": {
+          "model0": "./data/sad/model0/sample5.wav",
           "model1": "./data/sad/model1/sample5.wav",
           "model2": "./data/sad/model2/sample5.wav",
           "model3": "./data/sad/model3/sample5.wav",
@@ -129,6 +139,7 @@
         "sampleId": "sample1",
         "text": "Replace with transcript for surprised sample 1.",
         "audios": {
+          "model0": "./data/surprised/model0/sample1.wav",
           "model1": "./data/surprised/model1/sample1.wav",
           "model2": "./data/surprised/model2/sample1.wav",
           "model3": "./data/surprised/model3/sample1.wav",
@@ -141,6 +152,7 @@
         "sampleId": "sample2",
         "text": "Replace with transcript for surprised sample 2.",
         "audios": {
+          "model0": "./data/surprised/model0/sample2.wav",
           "model1": "./data/surprised/model1/sample2.wav",
           "model2": "./data/surprised/model2/sample2.wav",
           "model3": "./data/surprised/model3/sample2.wav",
@@ -153,6 +165,7 @@
         "sampleId": "sample3",
         "text": "Replace with transcript for surprised sample 3.",
         "audios": {
+          "model0": "./data/surprised/model0/sample3.wav",
           "model1": "./data/surprised/model1/sample3.wav",
           "model2": "./data/surprised/model2/sample3.wav",
           "model3": "./data/surprised/model3/sample3.wav",
@@ -165,6 +178,7 @@
         "sampleId": "sample4",
         "text": "Replace with transcript for surprised sample 4.",
         "audios": {
+          "model0": "./data/surprised/model0/sample4.wav",
           "model1": "./data/surprised/model1/sample4.wav",
           "model2": "./data/surprised/model2/sample4.wav",
           "model3": "./data/surprised/model3/sample4.wav",
@@ -177,6 +191,7 @@
         "sampleId": "sample5",
         "text": "Replace with transcript for surprised sample 5.",
         "audios": {
+          "model0": "./data/surprised/model0/sample5.wav",
           "model1": "./data/surprised/model1/sample5.wav",
           "model2": "./data/surprised/model2/sample5.wav",
           "model3": "./data/surprised/model3/sample5.wav",
@@ -191,6 +206,7 @@
         "sampleId": "sample1",
         "text": "Replace with transcript for disgusted sample 1.",
         "audios": {
+          "model0": "./data/disgusted/model0/sample1.wav",
           "model1": "./data/disgusted/model1/sample1.wav",
           "model2": "./data/disgusted/model2/sample1.wav",
           "model3": "./data/disgusted/model3/sample1.wav",
@@ -203,6 +219,7 @@
         "sampleId": "sample2",
         "text": "Replace with transcript for disgusted sample 2.",
         "audios": {
+          "model0": "./data/disgusted/model0/sample2.wav",
           "model1": "./data/disgusted/model1/sample2.wav",
           "model2": "./data/disgusted/model2/sample2.wav",
           "model3": "./data/disgusted/model3/sample2.wav",
@@ -215,6 +232,7 @@
         "sampleId": "sample3",
         "text": "Replace with transcript for disgusted sample 3.",
         "audios": {
+          "model0": "./data/disgusted/model0/sample3.wav",
           "model1": "./data/disgusted/model1/sample3.wav",
           "model2": "./data/disgusted/model2/sample3.wav",
           "model3": "./data/disgusted/model3/sample3.wav",
@@ -227,6 +245,7 @@
         "sampleId": "sample4",
         "text": "Replace with transcript for disgusted sample 4.",
         "audios": {
+          "model0": "./data/disgusted/model0/sample4.wav",
           "model1": "./data/disgusted/model1/sample4.wav",
           "model2": "./data/disgusted/model2/sample4.wav",
           "model3": "./data/disgusted/model3/sample4.wav",
@@ -239,6 +258,7 @@
         "sampleId": "sample5",
         "text": "Replace with transcript for disgusted sample 5.",
         "audios": {
+          "model0": "./data/disgusted/model0/sample5.wav",
           "model1": "./data/disgusted/model1/sample5.wav",
           "model2": "./data/disgusted/model2/sample5.wav",
           "model3": "./data/disgusted/model3/sample5.wav",
@@ -253,6 +273,7 @@
         "sampleId": "sample1",
         "text": "Replace with transcript for neutral sample 1.",
         "audios": {
+          "model0": "./data/neutral/model0/sample1.wav",
           "model1": "./data/neutral/model1/sample1.wav",
           "model2": "./data/neutral/model2/sample1.wav",
           "model3": "./data/neutral/model3/sample1.wav",
@@ -265,6 +286,7 @@
         "sampleId": "sample2",
         "text": "Replace with transcript for neutral sample 2.",
         "audios": {
+          "model0": "./data/neutral/model0/sample2.wav",
           "model1": "./data/neutral/model1/sample2.wav",
           "model2": "./data/neutral/model2/sample2.wav",
           "model3": "./data/neutral/model3/sample2.wav",
@@ -277,6 +299,7 @@
         "sampleId": "sample3",
         "text": "Replace with transcript for neutral sample 3.",
         "audios": {
+          "model0": "./data/neutral/model0/sample3.wav",
           "model1": "./data/neutral/model1/sample3.wav",
           "model2": "./data/neutral/model2/sample3.wav",
           "model3": "./data/neutral/model3/sample3.wav",
@@ -289,6 +312,7 @@
         "sampleId": "sample4",
         "text": "Replace with transcript for neutral sample 4.",
         "audios": {
+          "model0": "./data/neutral/model0/sample4.wav",
           "model1": "./data/neutral/model1/sample4.wav",
           "model2": "./data/neutral/model2/sample4.wav",
           "model3": "./data/neutral/model3/sample4.wav",
@@ -301,6 +325,7 @@
         "sampleId": "sample5",
         "text": "Replace with transcript for neutral sample 5.",
         "audios": {
+          "model0": "./data/neutral/model0/sample5.wav",
           "model1": "./data/neutral/model1/sample5.wav",
           "model2": "./data/neutral/model2/sample5.wav",
           "model3": "./data/neutral/model3/sample5.wav",
@@ -315,6 +340,7 @@
         "sampleId": "sample1",
         "text": "Replace with transcript for fearful sample 1.",
         "audios": {
+          "model0": "./data/fearful/model0/sample1.wav",
           "model1": "./data/fearful/model1/sample1.wav",
           "model2": "./data/fearful/model2/sample1.wav",
           "model3": "./data/fearful/model3/sample1.wav",
@@ -327,6 +353,7 @@
         "sampleId": "sample2",
         "text": "Replace with transcript for fearful sample 2.",
         "audios": {
+          "model0": "./data/fearful/model0/sample2.wav",
           "model1": "./data/fearful/model1/sample2.wav",
           "model2": "./data/fearful/model2/sample2.wav",
           "model3": "./data/fearful/model3/sample2.wav",
@@ -339,6 +366,7 @@
         "sampleId": "sample3",
         "text": "Replace with transcript for fearful sample 3.",
         "audios": {
+          "model0": "./data/fearful/model0/sample3.wav",
           "model1": "./data/fearful/model1/sample3.wav",
           "model2": "./data/fearful/model2/sample3.wav",
           "model3": "./data/fearful/model3/sample3.wav",
@@ -351,6 +379,7 @@
         "sampleId": "sample4",
         "text": "Replace with transcript for fearful sample 4.",
         "audios": {
+          "model0": "./data/fearful/model0/sample4.wav",
           "model1": "./data/fearful/model1/sample4.wav",
           "model2": "./data/fearful/model2/sample4.wav",
           "model3": "./data/fearful/model3/sample4.wav",
@@ -363,6 +392,7 @@
         "sampleId": "sample5",
         "text": "Replace with transcript for fearful sample 5.",
         "audios": {
+          "model0": "./data/fearful/model0/sample5.wav",
           "model1": "./data/fearful/model1/sample5.wav",
           "model2": "./data/fearful/model2/sample5.wav",
           "model3": "./data/fearful/model3/sample5.wav",
@@ -377,6 +407,7 @@
         "sampleId": "sample1",
         "text": "Replace with transcript for angry sample 1.",
         "audios": {
+          "model0": "./data/angry/model0/sample1.wav",
           "model1": "./data/angry/model1/sample1.wav",
           "model2": "./data/angry/model2/sample1.wav",
           "model3": "./data/angry/model3/sample1.wav",
@@ -389,6 +420,7 @@
         "sampleId": "sample2",
         "text": "Replace with transcript for angry sample 2.",
         "audios": {
+          "model0": "./data/angry/model0/sample2.wav",
           "model1": "./data/angry/model1/sample2.wav",
           "model2": "./data/angry/model2/sample2.wav",
           "model3": "./data/angry/model3/sample2.wav",
@@ -401,6 +433,7 @@
         "sampleId": "sample3",
         "text": "Replace with transcript for angry sample 3.",
         "audios": {
+          "model0": "./data/angry/model0/sample3.wav",
           "model1": "./data/angry/model1/sample3.wav",
           "model2": "./data/angry/model2/sample3.wav",
           "model3": "./data/angry/model3/sample3.wav",
@@ -413,6 +446,7 @@
         "sampleId": "sample4",
         "text": "Replace with transcript for angry sample 4.",
         "audios": {
+          "model0": "./data/angry/model0/sample4.wav",
           "model1": "./data/angry/model1/sample4.wav",
           "model2": "./data/angry/model2/sample4.wav",
           "model3": "./data/angry/model3/sample4.wav",
@@ -425,6 +459,7 @@
         "sampleId": "sample5",
         "text": "Replace with transcript for angry sample 5.",
         "audios": {
+          "model0": "./data/angry/model0/sample5.wav",
           "model1": "./data/angry/model1/sample5.wav",
           "model2": "./data/angry/model2/sample5.wav",
           "model3": "./data/angry/model3/sample5.wav",

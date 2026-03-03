@@ -1,5 +1,6 @@
 const EMOTION_ORDER = ["happy", "sad", "surprised", "disgusted", "neutral", "fearful", "angry"];
 const MODELS = ["model1", "model2", "model3", "model4", "model5", "model6"];
+const REFERENCE_MODEL = "model0";
 const STORAGE_PREFIX = "emo_eval_v2";
 
 const views = {
@@ -188,12 +189,25 @@ function renderTask() {
 
   const task = state.tasks[state.currentTaskIndex];
   const answeredCount = Object.keys(state.answers).length;
-  evalTitle.textContent = `Emotion: ${task.emotion}`;
+  evalTitle.textContent = "Evaluation";
   progressPill.textContent = `${answeredCount}/${state.tasks.length}`;
-  emotionText.textContent = `Please evaluate the following audio samples for target emotion: ${task.emotion}`;
+  emotionText.textContent = "Listen to the reference first. Use it for Naturalness and Emotional expressiveness; compare six generated clips for Intelligibility and Overall quality. / 请先听参考语音：自然度与情感表达对照参考语音评分；可懂度与音频质量在六个模型之间比较评分。";
   promptText.textContent = `Text: "${task.text}"`;
 
   ratingsForm.innerHTML = "";
+
+  const referenceSrc = task.audios?.[REFERENCE_MODEL];
+  if (referenceSrc) {
+    const refBlock = document.createElement("section");
+    refBlock.className = "model-block";
+    refBlock.innerHTML = "<h3>Reference clip</h3><p class=\"small muted\">Ground truth speech (not scored)</p>";
+    const refAudio = document.createElement("audio");
+    refAudio.controls = true;
+    refAudio.src = referenceSrc;
+    refBlock.appendChild(refAudio);
+    ratingsForm.appendChild(refBlock);
+  }
+
   task.modelOrder.forEach((modelId, modelIdx) => {
     const clipLabel = String.fromCharCode(65 + modelIdx);
     const modelBlock = document.createElement("section");
