@@ -79,6 +79,54 @@ function shuffleWithSeed(arr, seedText) {
   return out;
 }
 
+
+function normalizeAudioSrc(rawPath) {
+  if (!rawPath) return "";
+  const value = String(rawPath).trim();
+
+  if (/^https?:\/\//i.test(value) || value.startsWith("./") || value.startsWith("../") || value.startsWith("/data/")) {
+    return value;
+  }
+
+  const unixDataIdx = value.toLowerCase().lastIndexOf("/data/");
+  if (unixDataIdx >= 0) {
+    return `.${value.slice(unixDataIdx)}`;
+  }
+
+  const windowsNormalized = value.replace(/\\/g, "/");
+  const winDataIdx = windowsNormalized.toLowerCase().lastIndexOf("/data/");
+  if (winDataIdx >= 0) {
+    return `.${windowsNormalized.slice(winDataIdx)}`;
+  }
+
+  const fileUrlNormalized = windowsNormalized.replace(/^file:\/\//i, "");
+  const fileDataIdx = fileUrlNormalized.toLowerCase().lastIndexOf("/data/");
+  if (fileDataIdx >= 0) {
+    return `.${fileUrlNormalized.slice(fileDataIdx)}`;
+  }
+
+  return value;
+}
+
+function sanitizeStateAudioPaths(targetState) {
+  if (!targetState?.tasks) return targetState;
+  targetState.tasks.forEach((task) => {
+    if (!task?.audios) return;
+    Object.keys(task.audios).forEach((modelKey) => {
+      task.audios[modelKey] = normalizeAudioSrc(task.audios[modelKey]);
+    });
+  });
+  return targetState;
+}
+
+function wireAudioFallback(audioEl, rawPath) {
+  audioEl.addEventListener("error", () => {
+    const msg = `Audio failed to load: ${rawPath}`;
+    console.warn(msg);
+    audioEl.title = msg;
+  });
+}
+
 function storageKey(id) {
   return `${STORAGE_PREFIX}_${id}`;
 }
@@ -89,7 +137,7 @@ function saveStateToLocal() {
 
 function loadStateFromLocal(id) {
   const raw = localStorage.getItem(storageKey(id));
-  return raw ? JSON.parse(raw) : null;
+  return raw ? sanitizeStateAudioPaths(JSON.parse(raw)) : null;
 }
 
 async function tryLoadRemoteState(id) {
@@ -102,7 +150,7 @@ async function tryLoadRemoteState(id) {
     });
     if (!res.ok) return null;
     const data = await res.json();
-    return data.found ? data.state : null;
+    return data.found ? sanitizeStateAudioPaths(data.state) : null;
   } catch {
     return null;
   }
@@ -142,7 +190,7 @@ function createInitialState(email) {
     });
   }
 
-  return {
+  return sanitizeStateAudioPaths({
     version: 2,
     evaluatorEmail: norm,
     evaluatorId: evalId,
@@ -152,7 +200,7 @@ function createInitialState(email) {
     tasks,
     answers: {},
     completed: false,
-  };
+  });
 }
 
 function getEmotionRange(emotion) {
@@ -203,7 +251,8 @@ function renderTask() {
     refBlock.innerHTML = "<h3>Reference clip</h3><p class=\"small muted\">Ground truth speech (not scored)</p>";
     const refAudio = document.createElement("audio");
     refAudio.controls = true;
-    refAudio.src = referenceSrc;
+    refAudio.src = normalizeAudioSrc(referenceSrc);
+    wireAudioFallback(refAudio, referenceSrc);
     refBlock.appendChild(refAudio);
     ratingsForm.appendChild(refBlock);
   }
@@ -216,7 +265,9 @@ function renderTask() {
 
     const audio = document.createElement("audio");
     audio.controls = true;
-    audio.src = task.audios?.[modelId] || "";
+    const rawModelPath = task.audios?.[modelId] || "";
+    audio.src = normalizeAudioSrc(rawModelPath);
+    wireAudioFallback(audio, rawModelPath);
     modelBlock.appendChild(audio);
 
     const grid = document.createElement("div");
