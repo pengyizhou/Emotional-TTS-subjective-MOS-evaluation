@@ -80,10 +80,53 @@ button.secondary { background: #64748b; }
   padding: .5rem;
 }
 .metric label { font-size: .9rem; }
-select {
-  width: 100%;
-  padding: .4rem;
+.metric-label {
+  display: block;
+  margin-bottom: .35rem;
+  font-size: .9rem;
+  font-weight: 600;
+}
+.score-dots {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  flex-wrap: wrap;
+}
+.score-dot {
+  display: inline-flex;
+  align-items: center;
+  gap: .15rem;
+  cursor: pointer;
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: 999px;
+  padding: .2rem .38rem;
+  user-select: none;
+}
+.score-dot input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 2px solid #94a3b8;
+  background: #fff;
+  display: inline-block;
+}
+.dot-label {
+  font-size: .8rem;
+  color: #475569;
+}
+.score-dot.active,
+.score-dot:has(input:checked) {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+.score-dot.active .dot,
+.score-dot:has(input:checked) .dot {
+  background: #2563eb;
+  border-color: #2563eb;
 }
 audio { width: 100%; margin: .5rem 0; }

@@ -279,17 +279,20 @@ function renderTask() {
       const key = `${task.id}__${modelId}__${metric.key}`;
       const saved = state.answers[task.id]?.ratings?.[modelId]?.[metric.key];
 
+      const dots = [0, 1, 2, 3, 4, 5]
+        .map((score) => `
+          <label class="score-dot ${saved === score ? "active" : ""}">
+            <input type="radio" name="${key}" value="${score}" ${saved === score ? "checked" : ""} />
+            <span class="dot" aria-hidden="true"></span>
+            <span class="dot-label">${score}</span>
+          </label>`)
+        .join("");
+
       metricWrap.innerHTML = `
-        <label for="${key}">${metric.label}</label>
-        <select id="${key}" name="${key}" required>
-          <option value="">Select</option>
-          <option value="0" ${saved === 0 ? "selected" : ""}>0</option>
-          <option value="1" ${saved === 1 ? "selected" : ""}>1</option>
-          <option value="2" ${saved === 2 ? "selected" : ""}>2</option>
-          <option value="3" ${saved === 3 ? "selected" : ""}>3</option>
-          <option value="4" ${saved === 4 ? "selected" : ""}>4</option>
-          <option value="5" ${saved === 5 ? "selected" : ""}>5</option>
-        </select>`;
+        <span class="metric-label">${metric.label}</span>
+        <div class="score-dots" role="radiogroup" aria-label="${metric.label}">
+          ${dots}
+        </div>`;
       grid.appendChild(metricWrap);
     });
 
@@ -308,9 +311,9 @@ function collectCurrentAnswers() {
     ratingByModel[modelId] = {};
     for (const metric of metricDefs) {
       const key = `${task.id}__${modelId}__${metric.key}`;
-      const val = document.getElementById(key).value;
-      if (val === "") return null;
-      ratingByModel[modelId][metric.key] = Number(val);
+      const selected = document.querySelector(`input[name="${key}"]:checked`);
+      if (!selected) return null;
+      ratingByModel[modelId][metric.key] = Number(selected.value);
     }
   }
 
