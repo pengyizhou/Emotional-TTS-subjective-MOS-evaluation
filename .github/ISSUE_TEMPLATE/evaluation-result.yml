@@ -1,0 +1,12 @@
+name: Evaluation Result Submission
+description: Submit one evaluator JSON result
+labels: [evaluation]
+body:
+  - type: textarea
+    id: result
+    attributes:
+      label: JSON result
+      description: Paste the downloaded `evaluation_<id>.json` content here.
+      placeholder: '{"evaluatorId":"...","answers":{...}}'
+    validations:
+      required: true

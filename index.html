@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emotional TTS Subjective Evaluation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section id="welcome-view" class="card">
+        <h1>Emotional TTS Subjective Evaluation</h1>
+        <p>
+          Thank you for participating. Please enter your email so your progress can be saved and resumed.
+        </p>
+        <form id="email-form">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <div class="actions">
+            <button type="submit">Continue</button>
+          </div>
+        </form>
+        <p class="small muted">Your email is used only to resume this evaluation session.</p>
+      </section>
+
+      <section id="resume-view" class="card hidden">
+        <h2>Session found</h2>
+        <p id="resume-summary"></p>
+        <div class="actions">
+          <button id="resume-btn">Resume</button>
+          <button id="restart-btn" class="secondary">Start over</button>
+        </div>
+      </section>
+
+      <section id="eval-view" class="card hidden">
+        <div class="header-row">
+          <h2 id="eval-title">Evaluation</h2>
+          <span id="progress-pill" class="pill"></span>
+        </div>
+        <p id="emotion-text"></p>
+        <p id="prompt-text" class="prompt"></p>
+
+        <details class="metric-help">
+          <summary>Scoring guide (0-5)</summary>
+          <ul>
+            <li><strong>Intelligibility（可懂度）</strong>: Is the speech clear and easy to understand? (0 = cannot understand, 5 = very clear)</li>
+            <li><strong>Naturalness（自然度）</strong>: Does the speech sound natural and human-like? (0 = very unnatural, 5 = very natural)</li>
+            <li><strong>Emotional expressiveness（情感表达丰富度）</strong>: How accurately and richly is the target emotion expressed? (0 = wrong/no emotion, 5 = very accurate and expressive)</li>
+            <li><strong>Overall quality（音频质量）</strong>: Overall audio quality including noise, distortion, and smoothness. (0 = very poor, 5 = excellent)</li>
+          </ul>
+        </details>
+
+        <form id="ratings-form"></form>
+
+        <div class="actions">
+          <button id="save-next-btn">Save & Next</button>
+        </div>
+      </section>
+
+      <section id="done-view" class="card hidden">
+        <h2>Thank you!</h2>
+        <p>You have completed all evaluations.</p>
+        <p>You can download your results JSON and submit it to the researcher.</p>
+        <div class="actions">
+          <button id="download-btn">Download results (JSON)</button>
+          <button id="submit-issue-btn">Submit via GitHub Issue</button>
+          <button id="restart-fresh-btn" class="secondary">Start a new session</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
